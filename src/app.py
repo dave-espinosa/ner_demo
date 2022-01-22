@@ -39,7 +39,7 @@ async def get_skills(batch_input_texts: List[classes.InputText]):
 
     # Extracting 'raw' skills
     t1 = time.time()
-    raw_skill_list = [[str(item) for item in list(doc.ents)] for doc in nlp.pipe(text_list, batch_size=17, n_process=1)]
+    raw_skill_list = [[ent.text for ent in doc.ents] for doc in nlp.pipe(text_list, batch_size=17, n_process=1)]
     t2 = time.time()
     print(
         "Skills extracted from {} texts, in {:.2f} seconds".format(
