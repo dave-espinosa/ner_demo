@@ -1,5 +1,5 @@
 # Place here your user defined classes
-# This is a new comment I added for a quick PyCharm experiment
+# I will modify now this comment, and test a commit
 
 from fastapi import Query
 from pydantic import BaseModel
