@@ -7,15 +7,6 @@ from typing import List
 from . import classes
 
 
-# ^^ LOCAL MODULES NOTES ^^:
-# 1) Notice 'functions' exist as local module: 'functions.py'
-# 2) The same applies for 'classes' --> 'classes.py'
-# 3) Notice that the folder 'src' has a small dot over it,
-#    it means it is a PACKAGE. Therefore, 'functions' and
-#    'classes' are RELATIVE IMPORTS. Know more at:
-#    https://realpython.com/absolute-vs-relative-python-imports/
-
-
 nlp = spacy.load("en_core_web_lg")
 n_process = 1 # os.cpu_count()-1 if os.cpu_count() > 1 else os.cpu_count()
 
