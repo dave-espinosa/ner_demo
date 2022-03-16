@@ -1,6 +1,3 @@
-# Place here your user defined classes
-# I will modify now this comment, and test a commit again
-
 from fastapi import Query
 from pydantic import BaseModel
 
