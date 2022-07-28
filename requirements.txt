@@ -1,5 +1,4 @@
-spacy==3.2.4
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.2.0/en_core_web_sm-3.2.0.tar.gz
-fastapi==0.73.0
-uvicorn==0.17.4
-pydantic==1.8.2
+fastapi[all]
+gunicorn==20.1.0
+spacy==3.4.1
+en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.4.0/en_core_web_lg-3.4.0-py3-none-any.whl
